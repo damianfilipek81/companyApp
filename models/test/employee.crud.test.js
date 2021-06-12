@@ -12,7 +12,7 @@ describe('Employee', () => {
 
       const uri = await fakeDB.getUri();
 
-      mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+      await mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
     } catch (err) {
       console.log(err);
